@@ -392,6 +392,7 @@ stretch.blockSamples(); stretch.intervalSamples();
 | 2.1 | **Transient detection** (spectral flux) with a phase reset or short-window path on onsets |
 | 2.2 | **Multi-resolution STFT**: long windows for low frequencies, short ones for highs, crossfaded in bands |
 | 2.3 | **Harmonic / percussive / residual separation**: stretch each component with a suitable method (PV for harmonics, time-domain for percussion, noise resynthesis for the residual) |
+| 2.3b | One concrete design for 2.2 and 2.3 that reuses this engine as the phase master: [adaptive-multiresolution-pv-analysis.md](adaptive-multiresolution-pv-analysis.md) (Juillerat & Hirsbrunner, ICASSP 2017) |
 | 2.4 | Better **extreme-stretch** handling: replace uniform phase randomisation with noise-shaped resynthesis of stationary content |
 | 2.5 | Better **formant envelope**: cepstral or true-envelope (iterative cepstrum), and a real pitch tracker (YIN/pYIN) instead of the 3-peak heuristic |
 
